@@ -22,7 +22,6 @@ public class Calendar1 {
 		// prints "Sunday".
 		// The following variable, used for debugging purposes, counts how many days
 		// were advanced so far.
-		int debugDaysCounter = 0;
 
 		//// Write the necessary initialization code, and replace the condition
 		//// of the while loop with the necessary condition
@@ -30,7 +29,7 @@ public class Calendar1 {
 			if (dayOfWeek == 1) {
 				if (dayOfMonth == 1)
 					specialSunday++;
-				System.out.println(dayOfMonth + "/" + month + "/" + year + "Sunday");
+				System.out.println(dayOfMonth + "/" + month + "/" + year + " Sunday");
 			} else
 				System.out.println(dayOfMonth + "/" + month + "/" + year);
 
@@ -57,7 +56,7 @@ public class Calendar1 {
 			month = 1;
 		}
 		if (dayOfMonth > nDaysInMonth(month, year))
-			;
+
 		{
 			month++;
 			dayOfMonth = 1;
