@@ -22,7 +22,7 @@ public class Calendar1 {
 		// prints "Sunday".
 		// The following variable, used for debugging purposes, counts how many days
 		// were advanced so far.
-
+		int debugDaysCounter = 0;
 		//// Write the necessary initialization code, and replace the condition
 		//// of the while loop with the necessary condition
 		while (dayOfMonth <= nDaysInMonth(month, year) && year < 2000) {
