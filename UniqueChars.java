@@ -18,11 +18,9 @@ public class UniqueChars {
 
             char current = s.charAt(i);
 
-            if (newS.indexOf(current) == -1) {
-                if (current == ' ')
-                    newS += current;
-                else
-                    newS += current;
+            if (newS.indexOf(current) == -1 || current == ' ') {
+
+                newS += current;
             }
         }
         return newS;
