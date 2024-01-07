@@ -18,10 +18,10 @@ public class UniqueChars {
 
             char current = s.charAt(i);
 
-            if (newS.indexOf(current) == -1 && s(current) != " ")
+            if (newS.indexOf(current) == -1) {
 
                 newS += current;
-
+            }
         }
         return newS;
     }
