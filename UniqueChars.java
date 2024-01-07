@@ -19,7 +19,7 @@ public class UniqueChars {
             char current = s.charAt(i);
 
             if (newS.indexOf(current) == -1) {
-                if (current == " ")
+                if (current == ' ')
                     newS += current;
                 else
                     newS += current;
