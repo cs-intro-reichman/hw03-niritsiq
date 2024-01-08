@@ -27,6 +27,7 @@ public class Calendar {
 		//// Write the necessary initialization code, and replace the condition
 		//// of the while loop with the necessary condition
 		while (year <= givenYear) {
+
 			if (year == givenYear) {
 				if (dayOfWeek == 1) {
 					if (dayOfMonth == 1)
@@ -53,17 +54,18 @@ public class Calendar {
 		// Replace this comment with your code
 		dayOfWeek++;
 		dayOfMonth++;
-		if (month == 13) {
-			year++;
-			month = 1;
-		}
+
 		if (dayOfMonth > nDaysInMonth(month, year))
 
 		{
 			month++;
 			dayOfMonth = 1;
+			if (month == 13) { // month ==13
+				year++;
+				month = 1;
+			}
 		}
-		if (dayOfWeek >= 7)
+		if (dayOfWeek > 7)
 			dayOfWeek = 1;
 
 	}
