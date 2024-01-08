@@ -53,7 +53,7 @@ public class Calendar {
 		// Replace this comment with your code
 		dayOfWeek++;
 		dayOfMonth++;
-		if (month > 12) {
+		if (month == 13) {
 			year++;
 			month = 1;
 		}
