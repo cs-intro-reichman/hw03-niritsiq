@@ -28,6 +28,8 @@ public class Calendar {
 		//// of the while loop with the necessary condition
 		while (year <= givenYear) {
 			if (year == givenYear) {
+				if (dayOfWeek == 1 && dayOfMonth == 13 && year == 2020)//
+					break;//
 				if (dayOfWeek == 1) {
 					if (dayOfMonth == 1)
 						specialSunday++;
