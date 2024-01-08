@@ -27,8 +27,6 @@ public class Calendar {
 		//// Write the necessary initialization code, and replace the condition
 		//// of the while loop with the necessary condition
 		while (year <= givenYear) {
-			if (dayOfWeek == 1 && dayOfMonth == 13 && year == 2020)//
-				break;//
 			if (year == givenYear) {
 				if (dayOfWeek == 1) {
 					if (dayOfMonth == 1)
