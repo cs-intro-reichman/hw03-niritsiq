@@ -51,17 +51,21 @@ public class Calendar1 {
 		// Replace this comment with your code
 		dayOfWeek++;
 		dayOfMonth++;
-		if (month == 13) {
-			year++;
-			month = 1;
-		}
+		// if (month > 12) {
+		// year++;
+		// month = 1;
+		// }
 		if (dayOfMonth > nDaysInMonth(month, year))
 
 		{
 			month++;
 			dayOfMonth = 1;
+			if (month > 12) {
+				year++;
+				month = 1;
+			}
 		}
-		if (dayOfWeek >= 7)
+		if (dayOfWeek > 7) // >=
 			dayOfWeek = 1;
 
 	}
